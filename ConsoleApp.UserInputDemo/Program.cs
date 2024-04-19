@@ -1,12 +1,16 @@
 ﻿//Declare variables
 using System.Xml;
+using System.Xml.Linq;
 
-string name = string.Empty;
+string firstName = string.Empty;
+string lastName = string.Empty;
 int age = 0;
 int retirementAge = 65;
 
-Console.WriteLine("Please inter your name!");
-name = Console.ReadLine();
+Console.WriteLine("Please inter your first name!");
+firstName = Console.ReadLine();
+Console.WriteLine("Please inter your last name!");
+lastName = Console.ReadLine(); 
 Console.WriteLine("Please inter your age!");
 age = Convert.ToInt32(Console.ReadLine());
 
@@ -14,6 +18,6 @@ age = Convert.ToInt32(Console.ReadLine());
 int workingYearsRemaining = retirementAge - age;
 
 // OutputMethod the results to the user
-Console.WriteLine($"Full name: {name}");
+Console.WriteLine($"Full name: {firstName} {lastName}");
 Console.WriteLine($"Age: {age}");
 Console.WriteLine($"Working years remaining: {workingYearsRemaining}");
